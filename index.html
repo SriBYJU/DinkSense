@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f3ff65" />
+  <meta name="description" content="DinkSense is a local-first pickleball athlete intelligence system." />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+  <link rel="preload" as="image" href="assets/shriyan-avadhanula-founder.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="enhancements-v1.7.css" />
+  <title>DinkSense — Pickleball Athlete Intelligence</title>
+</head>
+<body>
+  <div id="app-shell">
+    <aside class="sidebar" aria-label="Primary navigation">
+      <div class="brand-row">
+        <div class="brand-mark">DS</div>
+        <div>
+          <div class="brand-name">DinkSense</div>
+          <div class="brand-sub">Athlete intelligence</div>
+        </div>
+      </div>
+      <nav id="nav" class="nav-list"></nav>
+      <div class="sidebar-card">
+        <div class="eyebrow">LOCAL-FIRST</div>
+        <strong>Your data stays on this device.</strong>
+        <p>Export an encrypted-style JSON backup anytime. Optional online tools are clearly labeled.</p>
+      </div>
+      <button id="install-button" class="button ghost wide" hidden>Install app</button>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <div id="page-kicker" class="eyebrow">TODAY</div>
+          <h1 id="page-title">Dashboard</h1>
+        </div>
+        <div class="topbar-actions">
+          <button id="quick-log" class="button primary">+ Log match</button>
+          <button id="coach-fab" class="button icon-button" aria-label="Open AI coach">✦</button>
+        </div>
+      </header>
+
+      <div id="offline-banner" class="offline-banner" hidden>
+        You are offline. Core tracking, coaching, training, video metadata, and backups still work.
+      </div>
+
+      <section id="view" class="view" aria-live="polite"></section>
+    </main>
+  </div>
+
+  <dialog id="modal" class="modal">
+    <div class="modal-frame">
+      <button id="modal-x" class="modal-close" type="button" aria-label="Close">×</button>
+      <div id="modal-body"></div>
+    </div>
+  </dialog>
+
+  <dialog id="coach-panel" class="coach-panel">
+    <div class="coach-frame">
+      <div class="coach-header">
+        <div>
+          <div class="eyebrow">DINKSENSE COACH</div>
+          <h2>Ask about your game</h2>
+        </div>
+        <button id="coach-x" class="modal-close" type="button" aria-label="Close">×</button>
+      </div>
+      <div id="coach-messages" class="coach-messages"></div>
+      <div class="coach-suggestions" id="coach-suggestions"></div>
+      <div class="coach-input-row">
+        <input id="coach-input" type="text" autocomplete="off" placeholder="Why am I losing close games?" />
+        <button id="coach-send" type="button" class="button primary">Send</button>
+      </div>
+      <p class="fine-print">Uses your local data by default. Optional Ollama support can be enabled in Settings.</p>
+    </div>
+  </dialog>
+
+  <template id="toast-template">
+    <div class="toast"></div>
+  </template>
+  <div id="toast-region" class="toast-region" aria-live="polite"></div>
+
+  <script src="adsense-config.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="vision-lab.js" defer></script>
+  <script src="vision-pro.js" defer></script>
+  <script src="enhancements-v1.7.js" defer></script>
+</body>
+</html>

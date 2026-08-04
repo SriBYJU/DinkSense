@@ -1,0 +1,4 @@
+DinkSense source package
+Copyright (c) 2026 Shriyan Avadhanula
+
+Permission is granted to use, modify, and demonstrate this source code for personal, educational, portfolio, and product-development purposes. Third-party brand names referenced in founder biography or external links remain the property of their respective owners. No trademark or sponsorship endorsement is implied beyond the founder biography supplied for this project.

@@ -1,0 +1,31 @@
+{
+  "name": "DinkSense \u2014 Pickleball Athlete Intelligence",
+  "short_name": "DinkSense",
+  "description": "A local-first pickleball athlete-intelligence system with adaptive coaching, living roadmaps, match analytics, video, health, courts, gear, competition, and athlete portfolio tools.",
+  "start_url": "./index.html#dashboard",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f8f2",
+  "theme_color": "#dfff38",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

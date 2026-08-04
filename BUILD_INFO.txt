@@ -1,0 +1,21 @@
+DinkSense 1.7.0 — Discovery, Playbook & Match Day
+Local-first pickleball athlete-intelligence PWA
+Founder: Shriyan Avadhanula
+Build date: August 4, 2026
+
+Major additions:
+1. Google Maps nearby-court discovery
+2. Pro-Level Playbook and official learning resources
+3. Match Day Command Center
+4. AdSense-ready lower-priority placements
+5. Founder image path and cache fix
+
+Motion Intelligence retained:
+- Form Match & Grade
+- Smart Replay Coach
+- Shot Progress Passport
+- Custom Motion Studio
+- Reaction & Split-Step Trainer
+- Court IQ Decision Arena
+
+Start with start.command (macOS), start.bat (Windows), start.sh (Linux), or python3 run.py.
