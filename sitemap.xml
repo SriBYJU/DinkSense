@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main App Homepage / Dashboard -->
+  <url>
+    <loc>https://sribyju.github.io/DinkSense/</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Privacy Policy Page -->
+  <url>
+    <loc>https://sribyju.github.io/DinkSense/PRIVACY.md</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Google Maps Discovery Page -->
+  <url>
+    <loc>https://sribyju.github.io/DinkSense/GOOGLE_MAPS_DISCOVERY.md</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Adsense Setup/Monetization Documentation -->
+  <url>
+    <loc>https://sribyju.github.io/DinkSense/ADSENSE_SETUP.md</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>
