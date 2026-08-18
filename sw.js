@@ -1,8 +1,8 @@
 'use strict';
-const CACHE = 'dinksense-shell-v1.7.0';
+const CACHE = 'dinksense-shell-v1.7.1';
 const MODEL_CACHE = 'dinksense-models-v1';
 const ASSETS = [
-  './','./index.html','./styles.css','./enhancements-v1.7.css','./adsense-config.js','./app.js','./vision-lab.js','./vision-pro.js','./enhancements-v1.7.js',
+  './','./index.html','./styles.css','./enhancements-v1.7.css','./adsense-config.js','./app.js','./vision-lab.js','./vision-pro.js','./enhancements-v1.7.js','./dinksense-hotfix-2026-08.js',
   './manifest.webmanifest','./assets/icon.svg','./assets/icon-192.png','./assets/icon-512.png',
   './assets/shriyan-avadhanula-founder.png'
 ];
@@ -30,6 +30,14 @@ self.addEventListener('fetch', event => {
   }
   if(url.hostname.includes('google.com')||url.hostname.includes('googlesyndication.com')){
     event.respondWith(fetch(event.request).catch(()=>new Response('<!doctype html><title>Online connection required</title><body style="font-family:system-ui;padding:2rem">Google Maps or AdSense requires an internet connection.</body>',{headers:{'Content-Type':'text/html'}})));
+    return;
+  }
+  // Navigation is network-first so GitHub Pages updates do not get stuck behind an old cached index.html.
+  if(event.request.mode==='navigate'){
+    event.respondWith(fetch(event.request).then(response=>{
+      if(url.origin===location.origin&&response.ok){const clone=response.clone();caches.open(CACHE).then(cache=>cache.put('./index.html',clone));}
+      return response;
+    }).catch(()=>caches.match('./index.html')));
     return;
   }
   event.respondWith(caches.match(event.request).then(hit=>hit||fetch(event.request).then(response=>{
