@@ -1,0 +1,19 @@
+.dks-press{position:relative;overflow:hidden;margin-top:28px;padding:clamp(24px,4vw,46px);color:#fff;background:#10140f;border-radius:28px;box-shadow:0 24px 70px rgba(16,20,15,.18)}
+.dks-press::after{content:"";position:absolute;width:300px;height:300px;right:-130px;top:-180px;border:1px solid rgba(223,255,56,.24);border-radius:50%;box-shadow:0 0 0 45px rgba(223,255,56,.045),0 0 0 90px rgba(107,226,189,.025);pointer-events:none}
+.dks-press-head{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(240px,.8fr);gap:32px;align-items:end;margin-bottom:24px}
+.dks-press-head .eyebrow{color:var(--accent)}
+.dks-press-head h2{margin:7px 0 0;font-size:clamp(2.35rem,5vw,4.7rem);line-height:.92;letter-spacing:-.06em}
+.dks-press-head>p{margin:0;color:rgba(255,255,255,.65);font-size:.92rem;line-height:1.65}
+.dks-press-grid{position:relative;z-index:1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.dks-press-card{display:grid;grid-template-columns:120px minmax(0,1fr);align-items:center;gap:20px;padding:14px;color:#fff;text-decoration:none;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.13);border-radius:20px;transition:transform .18s ease,border-color .18s ease,background .18s ease}
+.dks-press-card:hover,.dks-press-card:focus-visible{transform:translateY(-4px);border-color:rgba(223,255,56,.68);background:rgba(255,255,255,.085)}
+.dks-press-card:focus-visible{outline:3px solid rgba(223,255,56,.4);outline-offset:3px}
+.dks-press-logo{display:grid;place-items:center;overflow:hidden;aspect-ratio:1;background:#fff;border-radius:15px}
+.dks-press-logo img{display:block;width:100%;height:100%;object-fit:contain}
+.dks-press-copy{display:flex;min-width:0;flex-direction:column;gap:23px}
+.dks-press-copy strong{font-size:1.25rem;line-height:1.1}
+.dks-press-copy>span{display:flex;align-items:center;justify-content:space-between;gap:8px;color:var(--accent);font-size:.7rem;font-weight:900;letter-spacing:.11em;text-transform:uppercase}
+.dks-press-copy b{font-size:1.12rem;transition:transform .18s ease}
+.dks-press-card:hover .dks-press-copy b{transform:translate(3px,-3px)}
+@media(max-width:760px){.dks-press{padding:26px 16px;border-radius:22px}.dks-press-head{grid-template-columns:1fr;gap:12px}.dks-press-grid{grid-template-columns:1fr}.dks-press-card{grid-template-columns:88px minmax(0,1fr);gap:15px;padding:11px;border-radius:16px}.dks-press-copy{gap:15px}.dks-press-copy strong{font-size:1.05rem}}
+@media(prefers-reduced-motion:reduce){.dks-press-card,.dks-press-copy b{transition:none}.dks-press-card:hover,.dks-press-card:focus-visible{transform:none}}

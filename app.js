@@ -865,6 +865,10 @@ function renderProfile(){
 }
 
 
+function renderPressFeature(){
+  return `<section class="dks-press" aria-labelledby="dks-press-title"><header class="dks-press-head"><div><div class="eyebrow">INTERNATIONAL PRESS</div><h2 id="dks-press-title">As featured on:</h2></div><p>Coverage of the student-built technology portfolio behind DinkSense.</p></header><div class="dks-press-grid"><a class="dks-press-card" href="https://ghananews.org/shriyan-avadhanula-16-year-old-technology-innovator/" target="_blank" rel="noopener noreferrer" aria-label="Read the Ghana News article about Shriyan Avadhanula"><span class="dks-press-logo"><img src="assets/press/ghana-news.jpeg" width="2048" height="2048" alt="Ghana News"></span><span class="dks-press-copy"><strong>Ghana News</strong><span>Read the article <b aria-hidden="true">↗</b></span></span></a><a class="dks-press-card" href="https://ghanamedia.net/shriyan-avadhanula-16-year-old-innovator-platforms/" target="_blank" rel="noopener noreferrer" aria-label="Read the Ghana Media article about Shriyan Avadhanula"><span class="dks-press-logo"><img src="assets/press/ghana-media.jpeg" width="2048" height="2048" alt="Ghana Media"></span><span class="dks-press-copy"><strong>Ghana Media</strong><span>Read the article <b aria-hidden="true">↗</b></span></span></a></div></section>`;
+}
+
 function renderFounder(){
   setHeader('About the Founder','BUILT FROM REAL COMPETITION');
   const photo=state.founder.photo || 'assets/shriyan-avadhanula-founder.png';
@@ -881,7 +885,8 @@ function renderFounder(){
     ${sectionHead('FOUNDER JOURNEY','Athlete insight turned into product design')}
     <div class="grid three"><div class="card"><h3>Compete</h3><p>Real match-play experience revealed that improvement was too often reduced to a single rating number.</p></div><div class="card"><h3>Analyze</h3><p>DinkSense was designed so the AI coach, match logs, roadmap, health, gear, and video tools all pull from one athlete profile.</p></div><div class="card"><h3>Present</h3><p>The public-profile and sponsorship tools make it easier for ambitious juniors to show progress with evidence, not hype.</p></div></div>
     ${sectionHead('PRODUCT PHILOSOPHY','One coherent athlete-intelligence system')}
-    <div class="grid three"><div class="card"><h3>Useful for one player</h3><p>No core feature depends on friends joining. Your data alone creates value.</p></div><div class="card"><h3>Local-first by design</h3><p>Private logs, videos, goals, and coaching patterns stay under the player’s control.</p></div><div class="card"><h3>Ambitious, but honest</h3><p>Working features are labeled clearly; advanced model integrations are never faked.</p></div></div>`;
+    <div class="grid three"><div class="card"><h3>Useful for one player</h3><p>No core feature depends on friends joining. Your data alone creates value.</p></div><div class="card"><h3>Local-first by design</h3><p>Private logs, videos, goals, and coaching patterns stay under the player’s control.</p></div><div class="card"><h3>Ambitious, but honest</h3><p>Working features are labeled clearly; advanced model integrations are never faked.</p></div></div>
+    ${renderPressFeature()}`;
 }
 
 function renderSettings(){

@@ -1,10 +1,10 @@
 'use strict';
-const CACHE = 'dinksense-shell-v1.7.1';
+const CACHE = 'dinksense-shell-v1.7.2';
 const MODEL_CACHE = 'dinksense-models-v1';
 const ASSETS = [
-  './','./index.html','./styles.css','./enhancements-v1.7.css','./adsense-config.js','./app.js','./vision-lab.js','./vision-pro.js','./enhancements-v1.7.js','./dinksense-hotfix-2026-08.js',
+  './','./index.html','./styles.css','./enhancements-v1.7.css','./press-feature.css','./adsense-config.js','./app.js','./vision-lab.js','./vision-pro.js','./enhancements-v1.7.js','./dinksense-hotfix-2026-08.js',
   './manifest.webmanifest','./assets/icon.svg','./assets/icon-192.png','./assets/icon-512.png',
-  './assets/shriyan-avadhanula-founder.png'
+  './assets/shriyan-avadhanula-founder.png','./assets/press/ghana-news.jpeg','./assets/press/ghana-media.jpeg'
 ];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting()));
