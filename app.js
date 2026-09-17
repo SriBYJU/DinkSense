@@ -519,6 +519,7 @@ function renderDashboard(){
       </div>
       <div class="hero-side"><div class="focus-card"><div class="eyebrow" style="color:var(--accent)">FOCUS OF THE WEEK</div><div class="big">${esc(focus.title)}</div><p>${esc(focus.detail)}</p></div></div>
     </div>
+    ${renderPressFeature()}
     ${sectionHead('QUICK START','Everything is connected')}
     <div class="quick-grid">
       <button class="quick-tile" data-action="log-match"><span class="quick-icon">＋</span><strong>Log match</strong><span>Under 30 seconds</span></button>
@@ -886,7 +887,7 @@ function renderFounder(){
     <div class="grid three"><div class="card"><h3>Compete</h3><p>Real match-play experience revealed that improvement was too often reduced to a single rating number.</p></div><div class="card"><h3>Analyze</h3><p>DinkSense was designed so the AI coach, match logs, roadmap, health, gear, and video tools all pull from one athlete profile.</p></div><div class="card"><h3>Present</h3><p>The public-profile and sponsorship tools make it easier for ambitious juniors to show progress with evidence, not hype.</p></div></div>
     ${sectionHead('PRODUCT PHILOSOPHY','One coherent athlete-intelligence system')}
     <div class="grid three"><div class="card"><h3>Useful for one player</h3><p>No core feature depends on friends joining. Your data alone creates value.</p></div><div class="card"><h3>Local-first by design</h3><p>Private logs, videos, goals, and coaching patterns stay under the player’s control.</p></div><div class="card"><h3>Ambitious, but honest</h3><p>Working features are labeled clearly; advanced model integrations are never faked.</p></div></div>
-    ${renderPressFeature()}`;
+    `;
 }
 
 function renderSettings(){

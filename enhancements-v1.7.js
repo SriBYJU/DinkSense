@@ -243,7 +243,7 @@ renderFounder = function(){
     <div class="grid three"><div class="card"><h3>Compete</h3><p>Real match-play experience revealed that improvement was too often reduced to a single rating number.</p></div><div class="card"><h3>Analyze</h3><p>DinkSense connects the AI coach, match logs, roadmap, health, gear, discovery, and motion intelligence through one athlete profile.</p></div><div class="card"><h3>Present</h3><p>The public-profile and sponsorship tools help ambitious juniors show progress with evidence, not hype.</p></div></div>
     ${sectionHead('PRODUCT PHILOSOPHY','One coherent athlete-intelligence system')}
     <div class="grid three"><div class="card"><h3>Useful for one player</h3><p>No core feature depends on friends joining. Your data alone creates value.</p></div><div class="card"><h3>Local-first by design</h3><p>Private logs, videos, goals, motion grades, and coaching patterns remain under the player’s control.</p></div><div class="card"><h3>Ambitious, but honest</h3><p>Working features are labeled clearly; external integrations are never faked.</p></div></div>
-    ${renderPressFeature()}`;
+    `;
   const img=$('#ds17-founder-photo');
   img?.addEventListener('error',()=>{img.closest('.founder-photo-frame').innerHTML=`<div class="founder-photo-error"><strong>Founder image could not load.</strong><span>Confirm that <code>assets/shriyan-avadhanula-founder.png</code> was uploaded with the website files, then hard-refresh the page.</span></div>`;});
 };
